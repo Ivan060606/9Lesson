@@ -27,10 +27,10 @@ Console.WriteLine(Sum(10));
 */
 int Sum(int N, int M, int S)
 {
-    if (N == M) return 0;
     S = S + N;
+    if (N == M) return S;
     
-    return Sum(N - 1, M, S) + S;
+    return Sum(N - 1, M, S);
 }
 
 Console.WriteLine("Введите число М");
